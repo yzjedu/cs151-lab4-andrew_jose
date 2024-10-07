@@ -1,15 +1,15 @@
-# Step 1: Prompt the user to input their package
+# Prompt user to input their package
 package = input("Enter your package (Green, Blue, Purple): ")
 
-# Step 2: Continue to prompt until a valid package is entered
+# Prompt user until a valid package is entered
 while package != "Green" and package != "Blue" and package != "Purple":
     print("Invalid package. Please try again!")
     package = input("Enter your package (Green, Blue, Purple): ")
 
-# Step 4: Prompt the user to input the amount of data and store it in the variable GB
+# Prompt user to input the amount of data and store in the variable GB
 GB = float(input("Enter the amount of data used in GB: "))
 
-# Step 5: Calculate the total bill based on the package selected
+# Calculate the total bill based on the package
 if package == "Green":
     fixed_cost = 49.99
     if GB > 2:
@@ -32,7 +32,7 @@ elif package == "Blue":
         total_bill = base_cost
 
 else:
-    total_bill = 99.95  # Purple package: unlimited data
+    total_bill = 99.95
 
-# Step 18: Display the total bill
+# Display total bill
 print(f"Your total bill is: ${total_bill:.2f}")
